@@ -1,0 +1,16 @@
+
+img.logo {
+  width: 200px;
+  position: absolute;
+  right: 10%;
+  top: 63px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*@media only screen and (max-width: 1300px) {
+
+}*/
