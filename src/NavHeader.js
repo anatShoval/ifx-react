@@ -8,8 +8,9 @@ const NavHeader = (props) => {
       <div className="container">
         <a><img className="logo" src={logo} alt={logo}/></a>
         <SearchBar
-          myTerm = {props.searchMyTerm}
-          searchMyUpdated={(value) => props.searchMyUpdated.bind(value)}
+          searchTerm = {props.searchTerm}
+          searchUpdated={(value) => props.searchUpdated.bind(value)}
+          movies={props.movies}
         />
       </div>
     );
