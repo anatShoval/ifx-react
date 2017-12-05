@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import NavHeader from './NavHeader';
 import SearchJson from './Json/JsonSearch.json'
-import SearchInput, {createFilter} from 'react-search-input'
+//import SearchInput, {createFilter} from 'react-search-input'
 
 export default class App extends Component {
   

@@ -1,5 +1,19 @@
-import React from 'react';
+import React from 'react'
+import { Input } from 'semantic-ui-react'
+
+const SearchBar = (props) => {
+  return (
+    <div className="mySearch">
+      <Input onChange={props.searchUpdated.bind(this)} action={{ icon: 'search' }} placeholder='Search...' />
+    </div>
+  );
+}
+
+export default SearchBar
+/*
 import SearchInput, {createFilter} from 'react-search-input'
+
+
 
 import './SearchBar.css'
 
@@ -27,3 +41,4 @@ const SearchBar = (props) => {
 
 
 export default SearchBar;
+*/
