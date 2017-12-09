@@ -4,7 +4,7 @@ import { Input } from 'semantic-ui-react'
 const SearchBar = (props) => {
   return (
     <div className="mySearch">
-      <Input onChange={props.searchUpdated.bind(this)} action={{ icon: 'search' }} placeholder='Search...' />
+      <Input type="text" onChange={props.searchUpdated.bind(this)} action={{ icon: 'search' }} placeholder='Search...' />
     </div>
   );
 }

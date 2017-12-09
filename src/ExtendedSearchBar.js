@@ -6,8 +6,8 @@ const ExtendedSearchBar = (props) => {
   return (
     props.extendedSearch ?
     <div className="extendedSearchBar">
-      <Button className="btnHideExSearch" icon='remove circle' onClick={props.extendedSearchHandler.bind(false)} />
-    </div> : null
+      <Button className="btnHideExSearch" icon='remove circle' onClick={props.extendedSearchHandler.bind(this, false)} />
+    </div> : ""
   );
 }
 
