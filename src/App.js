@@ -29,6 +29,7 @@ export default class App extends Component {
           <NavHeader
             searchTerm={this.state.searchTerm}
             searchUpdated={(event) => this.setState({searchTerm:event.target.value})}
+            //searchUpdated={(event) => this.setState({searchTerm:event})}
             movies={this.state.movies}
             extendedSearch={this.state.extendedSearch}
             extendedSearchHandler={(boolVal) => this.setState({extendedSearch: boolVal})}

@@ -1,10 +1,15 @@
 import React from 'react'
 import { Input } from 'semantic-ui-react'
+import SearchInput, {createFilter} from 'react-search-input'
 
 const SearchBar = (props) => {
+
+ games.appendTo("#list");
   return (
     <div className="mySearch">
-      <Input type="text" onChange={props.searchUpdated.bind(this)} action={{ icon: 'search' }} placeholder='Search...' />
+
+      <Input id="list" type="text" onChange={props.searchUpdated.bind(this)} action={{ icon: 'search' }} placeholder='Search...' />
+
     </div>
   );
 }
