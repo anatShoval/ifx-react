@@ -1,15 +1,26 @@
 import React from 'react'
-import { Input } from 'semantic-ui-react'
+//import { Input } from 'semantic-ui-react'
 import SearchInput, {createFilter} from 'react-search-input'
 
 const SearchBar = (props) => {
-
- games.appendTo("#list");
+  const KEYS_TO_FILTERS = ['nameHeb', 'nameEng']
+  const filteredMovies = props.movies.filter(createFilter(props.searchTerm, KEYS_TO_FILTERS))
   return (
     <div className="mySearch">
 
-      <Input id="list" type="text" onChange={props.searchUpdated.bind(this)} action={{ icon: 'search' }} placeholder='Search...' />
-
+      <SearchInput className="search-input" type="text" onChange={this==="" ? props.searchUpdated.bind("***") : props.searchUpdated.bind(this)} action={{ icon: 'search' }} placeholder='Search...' />
+      <div className="searchResoult">
+      {filteredMovies.map(movie => {
+          return (
+            <div className="id" key={"movie_" + movie.id}>
+              <button>
+                <div className="nameHeb">{movie.nameHeb}</div>
+                <div className="nameEng">{movie.nameEng}</div>
+              </button>
+            </div>
+          );
+        })}
+        </div>
     </div>
   );
 }
