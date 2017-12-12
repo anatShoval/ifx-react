@@ -26,6 +26,7 @@ const NavHeader = (props) => {
             <SearchBar
               searchTerm = {props.searchTerm}
               searchUpdated={(value) => props.searchUpdated(value)}
+              searchResult={(value) => props.searchResult(value)}
               movies={props.movies}
             />
           </Grid.Column>

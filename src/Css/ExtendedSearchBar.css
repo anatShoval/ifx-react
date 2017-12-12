@@ -13,4 +13,6 @@ button.ui.icon.button.btnHideExSearch {
     top: 4px;
     background-color: black;
     color: white;
+    z-index: 3;
 }
+

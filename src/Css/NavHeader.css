@@ -1,8 +1,6 @@
 
 .App-header {
-  padding: 20px;
   color: white;
-  padding-top: 53px !important;
 }
 
 img.logo {
@@ -13,8 +11,8 @@ img.logo {
 
 img.ui.image {
   display: block;
-  position: absolute;
-  bottom: 13px;
+  margin-top: 19px;
+  margin-bottom: -30px;
 }
 
 .container {
@@ -22,6 +20,10 @@ img.ui.image {
   margin: 0 auto;
 }
 
+.ui.search {
+  font-size: 1em;
+  margin-top: 39px;
+}
 
 .mySearch {
   width: 100%;
@@ -49,7 +51,6 @@ button.ui.icon.button.btnMenu > i.content.icon {
 
 button.ui.icon.button.btnMenu {
   position: absolute;
-  top: -31px;
   right: 0px;
   background-color: #00000063;
 }
@@ -63,13 +64,18 @@ button.ui.icon.button.btnMenu:hover > i.content.icon:hover {
 }
 
 button.ui.button.btnExSearch {
-  position: absolute;
-  bottom: 13px;
-  right: 1px;
-  height: 22px;
-  margin-top: 3px;
-  font-size: 7pt;
-  width: fit-content;
+  position: relative;
+  font-size: 8pt;
+  margin-top: 38px;
+}
+
+input[type="button"] {
+  border: none;
+  background-color: #e8e8e8;
+}
+
+.id {
+  background-color: #e8e8e8;
 }
 /*
 .three.wide.column {
