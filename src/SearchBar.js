@@ -27,7 +27,7 @@ const SearchBar = (props) => {
 
 
       <div className="ui icon input">
-        <input className="prompt" type="text" onChange={props.searchUpdated.bind(this)} placeholder="Search..." value={props.searchTerm} />
+        <input className="prompt" type="text" onChange={props.searchUpdated.bind(this)} placeholder="חיפוש שם הסרט בעברית / באנגלית" value={props.searchTerm} />
         <i className="search icon"></i>
       </div>
       <div className="results">
